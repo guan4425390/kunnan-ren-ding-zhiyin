@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="ocPjDMGux8lLqHObuSd51C">
+<head data-page-node-id="cMbJ6amljhY58CU0GelDxm">
+<meta charset="UTF-8" data-page-node-id="VmlGj1SkcaK5CzpHdE4vU9">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" data-page-node-id="fGc2vom9sUy9GuREiHrJe5">
+<title>困难生认定办理指引 · 学生版 | 肇庆医学院</title>
+<style>
+:root{
+  --paper:#faf7f0;
+  --paper-2:#f3eee2;
+  --ink:#1c2432;
+  --ink-2:#5a6373;
+  --navy:#153a6b;
+  --navy-ink:#0e2a50;
+  --red:#b3402a;
+  --red-soft:#f7e5df;
+  --gold:#c99a2e;
+  --gold-soft:#f6ecd4;
+  --line:#ddd3bd;
+  --ok:#2e6e4e;
+  --ok-soft:#e3efe7;
+  --fs-body:16px;
+  --fs-small:13px;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --paper:#171a21; --paper-2:#1f2430; --ink:#e8e5dc; --ink-2:#9aa3b2;
+    --navy:#7da4d8; --navy-ink:#a8c6ea; --red:#e08a73; --red-soft:#3a2621;
+    --gold:#d9b45e; --gold-soft:#332b1a; --line:#3a4150; --ok:#7cc2a0; --ok-soft:#1e3229;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
+  background:var(--paper);color:var(--ink);font-size:var(--fs-body);line-height:1.75;
+}
+h1,h2,h3,.serif{font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",SimSun,serif}
+.wrap{max-width:460px;margin:0 auto;padding:0 16px calc(80px + env(safe-area-inset-bottom))}
+
+/* ── hero ── */
+.hero{background:var(--navy-ink);color:#f5f1e6;padding:26px 16px 22px;margin:0 -16px;
+  border-bottom:3px solid var(--gold)}
+.hero .school{font-size:12px;letter-spacing:.35em;opacity:.75;text-transform:uppercase}
+.hero h1{font-size:27px;line-height:1.35;margin:10px 0 4px;font-weight:700}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero .sub{font-size:13px;opacity:.72;margin-top:6px}
+.deadline{display:flex;gap:8px;margin-top:16px}
+.deadline .chip{flex:1;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);
+  border-radius:var(--radius);padding:10px 12px}
+.chip .k{font-size:11px;opacity:.7;letter-spacing:.12em}
+.chip .v{font-size:15px;font-weight:700;margin-top:2px;font-family:"Noto Serif SC",SimSun,serif}
+.chip.hot .v{color:#ffd98a}
+
+/* ── sticky nav ── */
+nav.sticky{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(8px);border-bottom:1px solid var(--line);margin:0 -16px;padding:8px 12px;
+  display:flex;gap:6px;overflow-x:auto;scrollbar-width:none}
+nav.sticky::-webkit-scrollbar{display:none}
+nav.sticky a{flex:none;font-size:12.5px;color:var(--ink-2);text-decoration:none;
+  padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+nav.sticky a:active{background:var(--navy-ink);color:#fff}
+
+/* ── sections ── */
+section{margin-top:30px;scroll-margin-top:52px}
+.sec-head{display:flex;align-items:baseline;gap:10px;margin-bottom:14px}
+.sec-head .no{font-family:"Noto Serif SC",SimSun,serif;font-size:30px;font-weight:700;color:var(--red);line-height:1}
+.sec-head h2{font-size:20px;font-weight:700}
+.sec-head .bar{flex:1;border-bottom:1px dashed var(--line);transform:translateY(-6px)}
+
+/* intro */
+.lead{background:var(--paper-2);border-left:4px solid var(--gold);border-radius:0 var(--radius) var(--radius) 0;
+  padding:12px 14px;font-size:14.5px}
+.lead b{color:var(--navy-ink)}
+@media (prefers-color-scheme: dark){.lead b{color:var(--navy)}}
+
+/* cards 速览 */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:14px;background:var(--paper)}
+.card h3{font-size:16px;margin-bottom:8px}
+.card.paper-c h3{color:var(--navy-ink)}
+.card.e-c h3{color:var(--red)}
+.card .tag{display:inline-block;font-size:11px;padding:1px 8px;border-radius:999px;margin-bottom:8px;
+  letter-spacing:.1em}
+.card.paper-c .tag{background:var(--ok-soft);color:var(--ok)}
+.card.e-c .tag{background:var(--red-soft);color:var(--red)}
+.card ul{list-style:none;font-size:13.5px}
+.card ul li{padding-left:14px;position:relative;margin-bottom:6px;color:var(--ink-2)}
+.card ul li::before{content:"·";position:absolute;left:0;font-weight:900;color:var(--gold)}
+.card ul li b{color:var(--ink)}
+
+/* timeline */
+.timeline{position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:8px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.tl-item{position:relative;padding-bottom:18px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:"";position:absolute;left:-24px;top:7px;width:10px;height:10px;border-radius:50%;
+  background:var(--paper);border:2.5px solid var(--navy-ink)}
+@media (prefers-color-scheme: dark){.tl-item::before{background:var(--paper)}}
+.tl-item.red::before{border-color:var(--red);background:var(--red)}
+.tl-item .t{font-weight:700;font-size:15px}
+.tl-item.red .t{color:var(--red)}
+.tl-item .d{font-size:13.5px;color:var(--ink-2)}
+
+/* steps */
+.step{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);
+  padding:14px 14px 12px;margin-bottom:12px}
+.step .head{display:flex;gap:10px;align-items:center;margin-bottom:6px}
+.step .badge{flex:none;width:30px;height:30px;border-radius:8px;background:var(--navy-ink);color:#fff;
+  font-family:"Noto Serif SC",SimSun,serif;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:15px}
+@media (prefers-color-scheme: dark){.step .badge{background:#2b3d5c}}
+.step .badge.warn{background:var(--red)}
+.step h3{font-size:16px;flex:1}
+.step p,.step li{font-size:14px;color:var(--ink-2)}
+.step ol,.step ul{padding-left:20px}
+.step li{margin-bottom:5px}
+.step li b,.step p b{color:var(--ink)}
+
+/* accordion */
+details.acc{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);margin-bottom:8px;overflow:hidden}
+details.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:8px;
+  padding:12px 14px;font-size:14.5px;font-weight:600}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary .ico{color:var(--gold);flex:none;transition:transform .25s}
+details.acc[open] summary .ico{transform:rotate(45deg)}
+details.acc .body{padding:0 14px 12px;font-size:13.5px;color:var(--ink-2)}
+details.acc .body b{color:var(--ink)}
+
+/* callout */
+.callout{border-radius:var(--radius);padding:12px 14px;font-size:13.5px;margin:12px 0}
+.callout.red{background:var(--red-soft);border:1px solid color-mix(in srgb,var(--red) 35%,transparent)}
+.callout.red b{color:var(--red)}
+.callout.gold{background:var(--gold-soft);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
+.callout.gold b{color:color-mix(in srgb,var(--gold) 70%,var(--ink))}
+
+/* downloads */
+.dl{border:1px solid var(--line);border-radius:var(--radius);background:var(--paper);display:flex;
+  align-items:center;gap:12px;padding:12px 14px;margin-bottom:9px;text-decoration:none;color:var(--ink);
+  transition:transform .15s ease,border-color .15s ease}
+.dl:active{transform:scale(.98);border-color:var(--navy-ink)}
+.dl .ficon{flex:none;width:38px;height:38px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;letter-spacing:.03em}
+.ficon.doc{background:var(--ok-soft);color:var(--ok)}
+.ficon.xls{background:var(--gold-soft);color:#8a6a14}
+@media (prefers-color-scheme: dark){.ficon.xls{color:var(--gold)}}
+.ficon.pdf{background:var(--red-soft);color:var(--red)}
+.dl .fi{flex:1;min-width:0}
+.dl .fi .n{font-size:14px;font-weight:600;display:block;line-height:1.4}
+.dl .fi .m{font-size:12px;color:var(--ink-2)}
+.dl .must{flex:none;font-size:10.5px;padding:2px 8px;border-radius:999px;letter-spacing:.08em}
+.dl .must.y{background:var(--red);color:#fff}
+.dl .must.n{background:var(--paper-2);color:var(--ink-2);border:1px solid var(--line)}
+
+/* footer */
+footer{margin-top:34px;padding:16px 14px;background:var(--paper-2);border-radius:var(--radius);
+  font-size:13px;color:var(--ink-2);text-align:center}
+footer .serif{font-size:15px;color:var(--ink);font-weight:700}
+.pill{display:inline-block;font-size:11px;border:1px solid var(--line);border-radius:999px;padding:1px 10px;margin:3px 2px;color:var(--ink-2)}
+</style>
+</head>
+<body data-page-node-id="hBYEJxYYA8lBaeu6AgwVYW">
+<div class="wrap" data-page-node-id="PYDE6ybpRUiUvDi7gTIQAu">
+
+  <header class="hero" data-page-node-id="jSYqqiV4RTTEt6rwRkIerT">
+    <div class="school" data-page-node-id="utKhRIdDQlR33hPwFNQF7M">肇庆医学院 · 学生资助</div>
+    <h1 data-page-node-id="jgGuTVXdTO6GljeEetsmPq">家庭经济困难学生认定<br data-page-node-id="FjjYdtqURWVzGbd3OCNOPC"><em data-page-node-id="fq2DAbsBgKFHVATG67Gxdj">办理指引</em>（学生版）</h1>
+    <div class="sub" data-page-node-id="iuyh3qjjtHOMNSGESqeoOt">2026—2027 学年秋季学期 · 2026 年 9 月</div>
+    <div class="deadline" data-page-node-id="BmM6k8HOunW5MUmE8CNffr">
+      <div class="chip hot" data-page-node-id="webWnA3Ry67PCfKaChkQaZ"><div class="k" data-page-node-id="qhVZBr9JhW8P2pJYA2UDP7">电子版交班长</div><div class="v" data-page-node-id="XTw1GkShktct0PdFYIA1CE">9月19日（周六）24:00 前</div></div>
+      <div class="chip hot" data-page-node-id="JadDj6jun7mbqX5ZEh8orb"><div class="k" data-page-node-id="PB4ckTig1fTujvBJY1x0Vj">纸质版交班长</div><div class="v" data-page-node-id="SSNvavHGW9xx0822VeyAVM">9月20日（周日）22:00 前</div></div>
+    </div>
+  </header>
+
+  <nav class="sticky" data-page-node-id="FJpIYzYNkqhThojwUCLc6A">
+    <a href="#s1" data-page-node-id="KwKD8505XPKuxJ088S7G11">①交什么</a><a href="#s2" data-page-node-id="K99GTFVErpl4OadyBYuWi4">②时间轴</a><a href="#s3" data-page-node-id="0AMDT7xzuDeYZ4r2R0QyY3">③纸质材料</a><a href="#s4" data-page-node-id="gK9pYVhMXjvGIoSzn2LbD4">④附件7操作</a><a href="#s5" data-page-node-id="QyzJyur8g7McwqURcfRrXZ">⑤佐证对照</a><a href="#s6" data-page-node-id="A2lWprysHDQNcyAXJCTGy2">⑥班长专栏</a><a href="#s7" data-page-node-id="WHgrJAO7uzZGGJ7Jc4Is4Q">⑦下载空白表</a><a href="#s8" data-page-node-id="aGhQqRiS98fS06K0inAhDT">⑧提醒</a>
+  </nav>
+
+  <!-- 1 -->
+  <section id="s1" data-page-node-id="XTtRyGlK0q6eceum0oPU6M">
+    <div class="sec-head" data-page-node-id="G7Z9CCjBIV17h1wibUJoLe"><span class="no" data-page-node-id="lvWtuGbhsdoQUtGSuabF2n">壹</span><h2 data-page-node-id="KPzwDDEeSFa4vbLXjUGLnG">先弄清楚：你要交什么</h2><span class="bar" data-page-node-id="3OjNCYEH7xpmjjTY2p0DQh"></span></div>
+    <div class="lead" data-page-node-id="EpuoZpaLF4YeGrCtpoDxCm">所有材料<b data-page-node-id="hQdioeYASx61WC1oXwe7PC">先交班长</b>，由班长汇总后统一提交辅导员。<b data-page-node-id="eEqvbrotC2kFi66qg6hkUj">家庭经济困难认定是申请国家助学金等资助的前提</b>，认定结果分特别困难、困难、一般困难三级。</div>
+    <div class="duo" style="margin-top:12px" data-page-node-id="xErVUNJoXd90HO6LAPNMmW">
+      <div class="card paper-c" data-page-node-id="XarJTEsmgGOFITYn7eqkCI">
+        <span class="tag" data-page-node-id="l0qoBLbsvTD0UoSHWfhXLx">纸质版 · 一式两份</span>
+        <h3 data-page-node-id="EsoLKd0Lo2ZUJH8MQrtcua">申请表＋佐证材料</h3>
+        <ul data-page-node-id="Jzi1YoFaZJizYnbgbRh1yX">
+          <li data-page-node-id="FzfHFoNPxvBcWwSvX8qrBu"><b data-page-node-id="Eib0HgYf2KCnIsC0S2pYI4">附件2</b> 申请表（自己打印手写）</li>
+          <li data-page-node-id="wdtDykUJFbuGrI0AjRlJOa">佐证材料复印件（对照附件3）</li>
+          <li data-page-node-id="tY4wB3bv2VKH50512yqCGZ"><b data-page-node-id="ZZgOW1nugC51SVgR7JAaF0">不得涂改</b>，两份分开两摞放</li>
+          <li data-page-node-id="aITyUUmcusFukgmHvIVrCW">9月20日（周日）22:00前交班长</li>
+        </ul>
+      </div>
+      <div class="card e-c" data-page-node-id="OHPPG8CxcXC7NR7SRGnWzj">
+        <span class="tag" data-page-node-id="1ETKINBJgU7UBk5BZiZjWG">电子版 · 交班长</span>
+        <h3 data-page-node-id="BSUS7aYBdqV0yprtJGhA3P">附件7 采集表</h3>
+        <ul data-page-node-id="jNw9hpR40fgsts60Y5FFJb">
+          <li data-page-node-id="FVD6Ae10jx2Mt07OuTKBSA">每人填一张<b data-page-node-id="Api96UHinLMf1gO0z4vCO5">单表</b></li>
+          <li data-page-node-id="h7EYOo7XVdfcmVGjsDTPWO"><b data-page-node-id="nMC8v700lT3TcYQ8Njlvsa">启用宏</b>后点“开始检查”</li>
+          <li data-page-node-id="4MMKx6wIdcBJmSlCKk3eR0"><b data-page-node-id="1pl93YppI7DOs5UMYkBMlc">0 错误</b>才能交</li>
+          <li data-page-node-id="kgQX3p11lnqMGsjcKnWrvo">9月19日（周六）24:00前发班长</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout gold" style="margin-top:10px" data-page-node-id="0pBCImTyuf9QxLHPurHUwy"><b data-page-node-id="9MMozfrFsxq1rzObG8LsCc">附件6</b>《初审名单汇总表》较简单（序号/姓名/学号/学院/班级/学历），由<b data-page-node-id="pUOGtACbpiMkDPiNBxmmJo">班长</b>负责汇总成一份总表；学生需如实提供姓名、学号、班级、学历等信息，配合班长完成汇总。</div>
+  </section>
+
+  <!-- 2 -->
+  <section id="s2" data-page-node-id="DaJBIw7KA180OgrldfZAch">
+    <div class="sec-head" data-page-node-id="GJToRQivpLoQvJhuSkG6Rc"><span class="no" data-page-node-id="TUX5lQESI0dr2C4yKetnYN">贰</span><h2 data-page-node-id="BJEvs751S4k99O9laRAq4h">时间轴：别踩线</h2><span class="bar" data-page-node-id="Fb2jbm1A9WEBTZtR095br9"></span></div>
+    <div class="timeline" data-page-node-id="VIVGcJx63Ujj03v1cGXjew">
+      <div class="tl-item red" data-page-node-id="5Yr8JMjsfL9KZrOM3teCv3"><div class="t" data-page-node-id="vhKG4C0v5i408cXPES3J3k">9月19日（周六）24:00 前</div><div class="d" data-page-node-id="nIC7TEuw2mxRyJ5TIGNHV6">电子材料：附件7单表（检查通过）发给班长</div></div>
+      <div class="tl-item red" data-page-node-id="cLgrEmrDYhzjbOQlo5YCZk"><div class="t" data-page-node-id="MuEkRvx36PkOg5zoJ0VdEx">9月20日（周日）22:00 前</div><div class="d" data-page-node-id="UjyDQVfKwvvhlIwmcl3EWR">纸质材料：附件2＋佐证复印件（一式两份）交至班长处</div></div>
+      <div class="tl-item" data-page-node-id="kCqMGSpqmS24qcPqfG2EmA"><div class="t" data-page-node-id="YQwR9J6S4KAPY0Irk3tCha">9月21日（周一）一早</div><div class="d" data-page-node-id="znQeWGSGvXVXEt267haAoH">班长把两个总表（附件6＋附件7）、纸质材料、评审会议记录表＋会议照片统一交辅导员</div></div>
+    </div>
+    <div class="callout red" data-page-node-id="u8kSPDzFRNJImCrDzqLsj7"><b data-page-node-id="qobPJmeqBVC0TA3oYBzCKX">逾期视为放弃本次认定。</b>请提前交齐，给班长汇总和补正留出时间。</div>
+  </section>
+
+  <!-- 3 -->
+  <section id="s3" data-page-node-id="3jMUDz9Vhl6flta3SWOCiF">
+    <div class="sec-head" data-page-node-id="JSwvEgznPS9AUnW165Y7dr"><span class="no" data-page-node-id="sg3NlXHmpRlxw3wpZmUozL">叁</span><h2 data-page-node-id="HdmK1WurrctSP3c63ulq86">纸质材料三步走</h2><span class="bar" data-page-node-id="77w6W9YEwpBPF1fakPBZuN"></span></div>
+
+    <div class="step" data-page-node-id="0y7ICZdeoTKwU6LR1VyklB">
+      <div class="head" data-page-node-id="ijqmqyLhJoLOFtYL4xaOkI"><span class="badge" data-page-node-id="NYKvoEMCPHhPzu2PVrwdm7">一</span><h3 data-page-node-id="lFZrT6IijxiRJKR7gb3oOg">填写申请表（附件2）</h3></div>
+      <ol data-page-node-id="4gDiMFXWrBRWn0Pay0DvDn">
+        <li data-page-node-id="URMYtQmozwKyy36WpDwtc3"><b data-page-node-id="MlonG3FiTqeJasaBZ2qbBt">自己打印</b>（2026版），黑色签字笔手写，<b data-page-node-id="jenWoHJvcdSCEsyluduclm">涂改无效</b>——先打草稿再誊写；</li>
+        <li data-page-node-id="ykTqkFtHETfcs5y14EzM6g">表头：学校（肇庆医学院）、年级、班别、学（籍）号；</li>
+        <li data-page-node-id="BiGq8heuxT85Qw6or90zfi">基本情况：姓名、性别、身份证号、院系、专业；</li>
+        <li data-page-node-id="EnhT53Dhhq5oqA2366pc7X"><b data-page-node-id="WN4WadUn82rNVwBiAlyR2u">特殊群体类型：手里有对应证件的才勾，没有的不要乱勾</b>，拿不准先问辅导员；</li>
+        <li data-page-node-id="lqXzI8UbYTyf8yeoLj5m6g">家庭情况按<b data-page-node-id="HGtkNtc19jQ71CVxhyzbt3">户口本</b>填：户籍地址、所在地类型、成员信息；<b data-page-node-id="Boao3QMQg1hXy2B7zqYAFP">人均年收入＝家庭年收入总额 ÷ 家庭人口数</b>；</li>
+        <li data-page-node-id="PthaZUBJBPTmyUAkZVM3ww">承诺签字栏：<b data-page-node-id="EWF4nxQlqcDPWsELI8XqTV">信息核对无误后再签</b>，手工抄写“本人承诺以上所填写资料真实，如有虚假，愿承担相应责任。”＋手写签名＋日期（满16周岁本人签，未满16周岁监护人签）。</li>
+      </ol>
+    </div>
+
+    <div class="step" data-page-node-id="2Bh6Uyj9ycoBnYRRF2FLqK">
+      <div class="head" data-page-node-id="rGKcKAGgkhoMDH1ejif2BA"><span class="badge" data-page-node-id="hKCGvFOag7G9dqfefO16LO">二</span><h3 data-page-node-id="b8Z3kcxDWQtEwfEjBFn9pK">复印佐证材料</h3></div>
+      <p data-page-node-id="bRo027wNc7n1iwJLnp8yan">勾了什么类型，就备什么复印件。详细对照见 <a href="#s5" style="color:var(--navy-ink);font-weight:700" data-page-node-id="87rjmSQLEl1VZNg7W5MZvP">下方「佐证对照表」</a>。</p>
+    </div>
+
+    <div class="step" data-page-node-id="7A6wBPkdETtjjAbsSmOvHG">
+      <div class="head" data-page-node-id="AlFb9jePptlaSzWIwg5QJp"><span class="badge" data-page-node-id="SAMHzt9nzKHai2GD1gNEq1">三</span><h3 data-page-node-id="BItKTAnwrbDR4YKTwoFROX">整理装订</h3></div>
+      <ol data-page-node-id="T6EyyrN3AszHpcCjHfOAx0">
+        <li data-page-node-id="DNHEbN9xW6mzWxHdr6qqZD">申请表、佐证材料<b data-page-node-id="zHu9rCeNC4e0NuAnH7ZzVe">各复印一式两份</b>；</li>
+        <li data-page-node-id="RygOHoRaVst2jTYw2QlPOF"><b data-page-node-id="9rkC8bOXVhATj3yqx3U9r5">两份分开两摞放</b>，不要堆在一起；</li>
+        <li data-page-node-id="AGgcRdELcPXHL2vMbj9H4b">佐证材料排序 = 附件7填写顺序；</li>
+        <li data-page-node-id="cCqCoJja6ECoBNyoIn8e9H">交班长处，9月20日（周日）22:00前。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="s4" data-page-node-id="tZJwSuuSZNBlIjBtKGFhJX">
+    <div class="sec-head" data-page-node-id="eqHDBORD5d5Z6yI1GSU9Kn"><span class="no" data-page-node-id="tIQt0Pv2SXazMf7qVH5VfM">肆</span><h2 data-page-node-id="t5u4OrS1vR6XPS51tHcHjm">附件7 操作指引（重点）</h2><span class="bar" data-page-node-id="BljxRUhopxYua4BvNajWte"></span></div>
+    <div class="callout red" data-page-node-id="V94IwcHH8kcWgSXvX0vJ2j"><b data-page-node-id="1OGallLGfO0ppNP2QTf88b">没有启用宏、检查不通过就提交 = 无法汇总 = 等于没交。</b>请严格按下面 5 步操作。</div>
+    <div class="step" data-page-node-id="YKRWwH6WHrwh5Gvib5MC6N">
+      <div class="head" data-page-node-id="rheR5rpY0tdr5pfEeT1Rve"><span class="badge warn" data-page-node-id="edGzRpAmvYdEwSacfztFvG">1</span><h3 data-page-node-id="EM5a54WbOOO69FZy81s5ix">用电脑打开</h3></div>
+      <p data-page-node-id="FnbNXeN0XUfeYwQwrccSMv">附件7 含宏功能，必须用<b data-page-node-id="CC7V52sCOH0Z6LSoTOJzRH">电脑版 Office Excel 或 WPS</b> 打开，手机无法操作。</p>
+    </div>
+    <div class="step" data-page-node-id="7wJ7AwTDPCE1CKRos4C6HR">
+      <div class="head" data-page-node-id="v6KsvFl5ddvQr6mQSm6AIR"><span class="badge warn" data-page-node-id="JR9Hc1JU7uWdieL2L6DR3U">2</span><h3 data-page-node-id="DGC1eP1llHXqLoLkqYI2DQ">启用宏（关键）</h3></div>
+      <ul data-page-node-id="w1gwSBHto78ABr29PKAeqN">
+        <li data-page-node-id="9jUvF2PftNZCJecwEOieWc">打开时顶部出现<b data-page-node-id="foMJQn2wk1YEe9d03lFvT4">黄色警告条</b> → 点“启用内容／启用宏”；</li>
+        <li data-page-node-id="lFrVMMOVGPzokZsJmkKXB9">Excel 没提示：<b data-page-node-id="9ZxjI35jUkjSVxLqnsCpOa">文件 → 选项 → 信任中心 → 信任中心设置 → 宏设置 → 启用所有宏</b>，重新打开；</li>
+        <li data-page-node-id="BkC9g40HtSs704IPHJRf3S">WPS：<b data-page-node-id="HKvNT2qWTcXjPsq7wE15j2">工具 → 宏 → 安全性 → 启用宏</b>；点“开始检查”无反应，先装“WPS VBA 环境”支持库。</li>
+      </ul>
+    </div>
+    <div class="step" data-page-node-id="QkhimGFmNJjSwPD7XQhiQt">
+      <div class="head" data-page-node-id="Vb5dRoQb8CAhqKVz7rVnum"><span class="badge warn" data-page-node-id="OhZ2yRkzpcQSre51FufehL">3</span><h3 data-page-node-id="6lx56Df1EmSDNQFloSKnqa">填写自己那一行</h3></div>
+      <ul data-page-node-id="6ZhHbdzrBHVrdBlBONhgXS">
+        <li data-page-node-id="0iCFMYACypaQ1Ahx3pY4b9">姓名＝汉字；证件类型＝居民身份证；身份证号<b data-page-node-id="E7zS7B5n5fRa7ZHQD31Xcz">18位逐位核对</b>；</li>
+        <li data-page-node-id="pPO49DBJhAeAKqUxa6Vbwa">“是否”类栏目<b data-page-node-id="OTnNwQiDa9Rtjqocc9xfze">只能填“是”或“否”</b>，不能填数字或打勾；</li>
+        <li data-page-node-id="MCoSHz56xcjr3XwnXc1ylY"><b data-page-node-id="yxN8zWXKpTdb8xEC9dhy2D">互斥规则</b>：特困救助 / 特困职工 / 低保 / 低保边缘 / 刚性支出，只能其中一项“是”，其余必须“否”；</li>
+        <li data-page-node-id="utyi4LPVwrKxG3cV3M0h6G">家庭年收入填数字（单位：元）。</li>
+      </ul>
+    </div>
+    <div class="step" data-page-node-id="O3j9ItqrHWwodblqBr6crs">
+      <div class="head" data-page-node-id="DvbaApxMAo1bmzuWhpvmJh"><span class="badge warn" data-page-node-id="0HlaqjCUHlhocSU0FNGVJy">4</span><h3 data-page-node-id="7lR1meBWYtZN7ay4AgEHpb">点“开始检查”直到 0 错误</h3></div>
+      <p data-page-node-id="CD3LhLeEBrIT0ZZhElj3PI">填完点表格里的“开始检查”按钮。通过 → 立即保存；有错 → 按提示逐条改正，<b data-page-node-id="yACEc4KWgWkGBEg2lTb8GJ">重复检查直到完全通过</b>。</p>
+    </div>
+    <div class="step" data-page-node-id="JJAu87WxbxB91qkEopTp3L">
+      <div class="head" data-page-node-id="n1GTuTaXcqaWAGVet6Fbh0"><span class="badge warn" data-page-node-id="0GYgFF0QsX96h2tiwp4kmZ">5</span><h3 data-page-node-id="olhqJc6tn8BJlg4iaRuakh">命名提交</h3></div>
+      <p data-page-node-id="lgcLkOg69hWCscda9prXKC">文件重命名为“<b data-page-node-id="jla5REBWEH8WixQQ1jy3mC">班级＋姓名＋学号</b>”，9月19日（周六）24:00 前发给班长。</p>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="s5" data-page-node-id="vBerwZQ26f5rvWbQsDip1K">
+    <div class="sec-head" data-page-node-id="tjDYFV4uNBgyRR7QxaypUo"><span class="no" data-page-node-id="723P18jkEeTEododEsHaUv">伍</span><h2 data-page-node-id="381ourLOREvXfdP2J3o5EU">佐证材料对照表</h2><span class="bar" data-page-node-id="RAg9XcEfHHInacFsKGdfpH"></span></div>
+    <p style="font-size:13.5px;color:var(--ink-2);margin-bottom:12px" data-page-node-id="AnYPFjCvcKUsELh6UkiMz1">勾选哪类，就展开看对应的复印件清单（摘自附件3、附件4）。</p>
+
+    <details class="acc" data-page-node-id="IcChbh1EWc2vk7ojejUbK3"><summary data-page-node-id="eOjWFp6ZzUjBvQ132VcD6e">脱贫家庭 / 防止返贫致贫对象家庭 / 原广东建档立卡<span class="ico" data-page-node-id="8Z11CcBuvXbbvEipyoXTRv">＋</span></summary>
+      <div class="body" data-page-node-id="Qv5phpfaVAg4oq7O6bL2ab">对应证件复印件 ＋ <b data-page-node-id="yaXhqI45qFcyON0QHlgbqT">户口簿户主首页</b> ＋ <b data-page-node-id="Kk1pVpUdA1gokCA9JeLnpu">户口簿本人页</b></div></details>
+    <details class="acc" data-page-node-id="0f8W5kAj00ra73E6hrNTiB"><summary data-page-node-id="Lc34B52BCT1fQnjW3oNlkS">特困救助 / 特困职工 / 低保 / 低保边缘 / 刚性支出困难家庭<span class="ico" data-page-node-id="b6bXidFi3wYCt79nb6bJsL">＋</span></summary>
+      <div class="body" data-page-node-id="x2qT8rZzZHYvpDbB1KxEVx">对应证件复印件 ＋ <b data-page-node-id="DH1lWYkIyyrGDRVu6CoxM7">户口簿户主首页</b> ＋ <b data-page-node-id="bl7CZMhlGbXogyJY4cEYBc">户口簿本人页</b></div></details>
+    <details class="acc" data-page-node-id="gNZzo5OUdo9t8X0WWBbYeX"><summary data-page-node-id="6S04F4gGrYxdlW6ZCvPP91">孤儿（含事实无人抚养儿童）<span class="ico" data-page-node-id="ZeCu6GPKSGyAcpa2pPRNnl">＋</span></summary>
+      <div class="body" data-page-node-id="Zchc7hmGZPUZNAC6eMulhp"><b data-page-node-id="7XvRYqgYjTdpXZh9EFwnHX">儿童福利证</b>或孤儿／事实无人抚养儿童身份认定证件</div></details>
+    <details class="acc" data-page-node-id="6W19MLLseGcP9ZP1GL3gAs"><summary data-page-node-id="IVbH17g4QsoIFONi854XOh">优抚对象及其子女（烈士子女、牺牲军人子女）、因公牺牲警察子女<span class="ico" data-page-node-id="hEOzNOPQS9djcNThjSgqNq">＋</span></summary>
+      <div class="body" data-page-node-id="9bhQKf2xrwh2xfAT8RaTtL"><b data-page-node-id="fineZVTqitangTWnNcWPkh">残疾军人证</b>或优抚对象抚恤补助登记证 ＋ 户口簿户主首页 ＋ 本人页</div></details>
+    <details class="acc" data-page-node-id="i5OxID42wFIeRrv9cyXqHG"><summary data-page-node-id="rfNECZypJhcXNjlPl4LPKf">学生本人残疾<span class="ico" data-page-node-id="MMrKh2yNykM0ldeFZGNsnD">＋</span></summary>
+      <div class="body" data-page-node-id="q8NkZqm8sipDeWNT2C1Ezd"><b data-page-node-id="B43qnUVimgKlr7WxM2Fl07">残疾人证</b></div></details>
+    <details class="acc" data-page-node-id="OI5NYTTAmj2NS6bZs7yAKh"><summary data-page-node-id="T5m55S1DTD9rVQam3TRmne">父母一方为残疾人<span class="ico" data-page-node-id="HcAqhMlK3AF3eJSHmkuOFN">＋</span></summary>
+      <div class="body" data-page-node-id="GqOsbugz5wqQ6uALGlfnnS"><b data-page-node-id="B7gPuJqoxGu74HiM54DAhf">残疾人证</b> ＋ 户口簿户主首页 ＋ 本人页</div></details>
+    <details class="acc" data-page-node-id="fUDE7I1fs3DcyAFkVel1yT"><summary data-page-node-id="txGKJD6e4dyQajwmTCTOMR">本人或家庭成员患重大疾病<span class="ico" data-page-node-id="pq9nERCbbFkAlL02SrhAka">＋</span></summary>
+      <div class="body" data-page-node-id="eVT3QUikbFnwHEEOCr1fJx"><b data-page-node-id="LHpFykYtrW1HyGHBH9i69T">病历或病情诊断书</b>——须<b data-page-node-id="3G5kkXus2rne71cC6YWWAW">县级区级以上或三甲医院出具并盖医院公章</b>，注明病种 ＋ 户口簿户主首页 ＋ 家庭成员页 ＋ 本人页</div></details>
+    <details class="acc" data-page-node-id="pgDGkKgTPGXkfW02MNeTKt"><summary data-page-node-id="csWco99sCCW6S3T0HNEWGF">家庭遭受重大自然灾害 / 重大突发意外事件<span class="ico" data-page-node-id="F9wbmkYaVvIv42BXM61u4X">＋</span></summary>
+      <div class="body" data-page-node-id="5tI74B9JCSashi9ZN3ctbw">相关证件，或<b data-page-node-id="NH0ks5cbFSCllIkhJR9t48">手写情况描述</b>（含<b data-page-node-id="lqnhlUlLDiQZw5GHSsAp8X">本人签名</b>＋<b data-page-node-id="ovxv6TfFUHTCNHotbUfPEs">村/居委会联系电话</b>）＋ 户口簿户主首页 ＋ 本人页</div></details>
+    <details class="acc" data-page-node-id="1O4NJfEWSj5eboM5RLNaLB"><summary data-page-node-id="aVwnpcWsjaVb6hgaKFmcJm">父母一方抚养<span class="ico" data-page-node-id="XLAFW8ZNJctxz4kYo3Kgeo">＋</span></summary>
+      <div class="body" data-page-node-id="3yM6xYAeFu2S5f9srAj5mq">相关证件或手写情况描述（本人签名＋村/居委会电话）＋ 户口簿户主首页 ＋ <b data-page-node-id="p4WRJJlCPBIdihT3RgACHU">父/母本人页</b> ＋ 本人页</div></details>
+    <details class="acc" data-page-node-id="Hxi1pjVlXAwjIsbKxmT8If"><summary data-page-node-id="NbFM5xf2zA5Bx5YJS9kcIB">父母均没有工作 / 一方没有工作<span class="ico" data-page-node-id="czYnW09aBsDPnY5Gj8F0gX">＋</span></summary>
+      <div class="body" data-page-node-id="bDzBU21ztAPBkwOxjMsoLG"><b data-page-node-id="pBbcXN7QomErSGH9pAYfLB">失业证</b>或其他佐证材料（不含农村种植/养殖户）</div></details>
+    <details class="acc" data-page-node-id="Hn9qyB1JYaOm3rNod7mqfo"><summary data-page-node-id="HmWAGjoSpUmWuFIWwSYPm5">农村小型种植/养殖户、人均年收入偏低<span class="ico" data-page-node-id="fuJe55GHJCqAsJ5tAQZp85">＋</span></summary>
+      <div class="body" data-page-node-id="C9gFfMTBeZjHSdGPcBE5aS"><b data-page-node-id="ieod79PUMxF3XZ6mUug43q">手写情况描述</b>（含本人签名＋村/居委会联系电话）</div></details>
+    <details class="acc" data-page-node-id="Sk7kbxcaIIGFN3PPfydG9k"><summary data-page-node-id="9Bb9wcDhkmMNUbc5swyUje">家庭在学人数 2 人及以上<span class="ico" data-page-node-id="cyFXwuwxPXoZDmo9xafzQN">＋</span></summary>
+      <div class="body" data-page-node-id="FUnvHqD9M2MS5MXGYbD0NS">户口簿 ＋ <b data-page-node-id="3jXCFR81CopkmtZXsRPpFe">学生证注册页</b></div></details>
+  </section>
+
+  <!-- 6 -->
+  <section id="s6" data-page-node-id="FiaUysHee4oTQk9OQ6ojxF">
+    <div class="sec-head" data-page-node-id="vREqjreYAWqZe14u3YEGpN"><span class="no" data-page-node-id="Z998qtP4u1TMfMWro88UyJ">陆</span><h2 data-page-node-id="2JZ6kuUViSPz5fWbmGtmoW">班长专栏</h2><span class="bar" data-page-node-id="3CPEr4WidzveJnkyeCTXxO"></span></div>
+    <div class="step" data-page-node-id="2xpARLezJ6gKdXGTHqH6aq">
+      <ol data-page-node-id="Bl3s4Jo3E8fY6NbdWFDxLd">
+        <li data-page-node-id="v675cY1U4V156igAkS0dVS">收齐全班附件7单表后，把每个人的数据行<b data-page-node-id="DyFacPx5Jravdm6dN9CZ31">逐行合并</b>到<b data-page-node-id="iDgmA2MU5DfdjHMzqTr1Is">一份附件7总表</b>（一行一人，不动表头和公式结构）；</li>
+        <li data-page-node-id="mOCv4kvkKWf9ZlyhXD2HhW">打开总表，同样点“开始检查”，确保 <b data-page-node-id="7gQucArvIEIx26ZU8OGaMF">0 错误</b>；</li>
+        <li data-page-node-id="EBVc5BavOqJIOvi0JNvxlq">按模板填好<b data-page-node-id="Lp0Ihpjrn3HHgTV3uYG9uw">一份附件6汇总表</b>（全班申请名单）；</li>
+        <li>组织召开班级评审会议：填写<b>《评审会议记录表》</b>，<b>拍照留存</b>并记录会议内容，作为班级评审依据——<b>每位班长均需提交此表</b>；</li>
+        <li data-page-node-id="mdYGelwdFG881AWIz2aGF1"><b data-page-node-id="PWvlJP32K2sRUcROVXiICH">9月21日（周一）一早</b>：两个总表（附件6＋附件7）＋全班纸质材料＋评审会议记录表与会议照片，统一交辅导员。</li>
+      </ol>
+      <div class="callout gold" style="margin-top:10px" data-page-node-id="8YSHu9nfTDxNt8PJsW6z7o"><b data-page-node-id="PITAToAKBuzrUgQj9RdPB5">最终交付物 = 两个总表</b>：1 份附件6汇总表 ＋ 1 份附件7总表。个人单表只作收集用。</div>
+      <div class="callout red" style="margin-top:10px"><b>评审会议记录表＋会议照片缺一不可：</b>即使未实际召开会议，只要班里有同学提交材料，也必须补齐“评审记录表＋照片”两项材料。</div>
+    </div>
+  </section>
+
+  <!-- 7 downloads -->
+  <section id="s7" data-page-node-id="ntyojybmBlYUtb3PFDX6be">
+    <div class="sec-head" data-page-node-id="biegacBlYvq9EGWnGsfIiO"><span class="no" data-page-node-id="HS2d8eA3TrkjnG2gsG7mEx">柒</span><h2 data-page-node-id="EW2UnEZSy9BJpBh5pypKqq">下载空白表</h2><span class="bar" data-page-node-id="fa1EpV79nHGNOta9zK1zXc"></span></div>
+
+    <a class="dl" href="files/附件7 家庭经济信息采集表.xls" download data-page-node-id="Pn04E18thZyyJWvDfdlxB7">
+      <span class="ficon xls" data-page-node-id="wG8fqLu1wDjlZwKCtpEkYg">XLS</span>
+      <span class="fi" data-page-node-id="oPfUKD0U8nizDbrZEGBXZD"><span class="n" data-page-node-id="sPRExmkmFCIXMKiIvZxE2f">附件7 · 家庭经济信息采集表</span><span class="m" data-page-node-id="BhZC1D7vgsMTtUexMH6IQg">电子版 · 每人填一张 · 须启用宏通过检查</span></span>
+      <span class="must y" data-page-node-id="Xg3suigHYlbWBcKzgLUBdC">必下</span>
+    </a>
+    <a class="dl" href="files/附件2 广东省家庭经济困难学生认定申请表（2026版）.docx" download data-page-node-id="SsECjxYk4ImORZ6YVfR1Px">
+      <span class="ficon doc" data-page-node-id="hbsDmSxclzO1kQdURJ4fNN">DOC</span>
+      <span class="fi" data-page-node-id="OXdRcvgDRlx7n7WPk5JXrU"><span class="n" data-page-node-id="7VJvuI1cGVEqWSr7m1Cih1">附件2 · 家庭经济困难学生认定申请表</span><span class="m" data-page-node-id="sYuW81PFurN3VB7oex4vDZ">2026版空白表 · 自己打印手写 · 一式两份</span></span>
+      <span class="must y" data-page-node-id="CXakb3UUQoPSEgewXGvFdf">必下</span>
+    </a>
+    <a class="dl" href="files/《申请表》填写说明.pdf" download data-page-node-id="Uj0qCWyGHBvGP5xODYmM3S">
+      <span class="ficon pdf" data-page-node-id="m8hwBO6egfWK7V6DKVInsk">PDF</span>
+      <span class="fi" data-page-node-id="C3uyxvdKX151e5ytGmDmuK"><span class="n" data-page-node-id="9GXBBmFhFFm1IW5QRpgLrI">《申请表》填写说明</span><span class="m" data-page-node-id="8CYJAIa95jgMjLTAVKE229">附件2 逐栏填写示例 · 打印前先看</span></span>
+      <span class="must y" data-page-node-id="A05aWpit8mxmGeOdQ4l8Nb">必下</span>
+    </a>
+    <a class="dl" href="files/附件3 广东省家庭经济困难学生认定分析表（2026版）.xls" download data-page-node-id="UblVNtwjrXtKwEEa4wIrYY">
+      <span class="ficon xls" data-page-node-id="ga7ahgbgf8iHxPOY2uph48">XLS</span>
+      <span class="fi" data-page-node-id="dxaq2DRGp2LnfGMDQc6uzH"><span class="n" data-page-node-id="8g7Jte49hgaJEgtAvfqI2w">附件3 · 认定分析表</span><span class="m" data-page-node-id="RtUdJKxDL9DzbeSq4e4LON">决定“特殊群体类型”怎么勾、备什么复印件</span></span>
+      <span class="must y" data-page-node-id="rwd0BBL6UdManRHJJ9Y2yC">必下</span>
+    </a>
+    <a class="dl" href="files/附件1 XX（姓名）-家庭经济困难学生认定自愿放弃声明（模板）.doc" download data-page-node-id="Bkl4M7U3XPH1Cc8YBiriND">
+      <span class="ficon doc" data-page-node-id="67j6zc46FIzJrc5hn7qhLc">DOC</span>
+      <span class="fi" data-page-node-id="UTHIT7q3pqHp3Oum4rUa8B"><span class="n" data-page-node-id="d4ex5cOdoFmIW5tQyJhEyB">附件1 · 自愿放弃声明</span><span class="m" data-page-node-id="pGFADE5VJke7TD2pkLoPz4">仅“特殊群体自愿放弃申请”的同学需要 · 签名＋按手印</span></span>
+      <span class="must n" data-page-node-id="SGZHbd8wnhLfDaw7um1nTk">按需</span>
+    </a>
+    <a class="dl" href="files/附件4 广东省家庭经济困难学生认定工作调整指标解释.doc" download data-page-node-id="AzxxjvM5RPUSqKlXYGfH4h">
+      <span class="ficon doc" data-page-node-id="WkqBxEdAxJLadbF9oCNHj3">DOC</span>
+      <span class="fi" data-page-node-id="6BXPZzqOvqfoXlMeWMaCDB"><span class="n" data-page-node-id="MuZWEOiUvKvJHEffjioBsM">附件4 · 认定指标解释</span><span class="m" data-page-node-id="jbTijQjsOjB4fTZ6MpNubA">重大疾病范围等判断依据</span></span>
+      <span class="must n" data-page-node-id="ioUYcFHQh4Izy1slzNDbf4">参考</span>
+    </a>
+    <a class="dl" href="files/附件6 家庭经济困难学生认定初审名单汇总表.xls" download data-page-node-id="scpk7IMefB5zBmAqqz0RcC">
+      <span class="ficon xls" data-page-node-id="4FYrdjpLgzSLEmUEKRe8jZ">XLS</span>
+      <span class="fi" data-page-node-id="r2LzhO7UJHoVW3TwwEy0NX"><span class="n" data-page-node-id="P2hYlY8H9zdufAfAahfcgF">附件6 · 初审名单汇总表</span><span class="m" data-page-node-id="KFV9HNMoE7wYu5SEaGnQWd">班长汇总填写</span></span>
+      <span class="must n" data-page-node-id="OIlH7Y9lPmOna8xjlutMKU">班长用</span>
+    </a>
+    <a class="dl" href="files/评审会议记录表.doc" download>
+      <span class="ficon doc">DOC</span>
+      <span class="fi"><span class="n">评审会议记录表</span><span class="m">班长组织填写 · 拍照留存 · 班级评审依据 · 每班必交</span></span>
+      <span class="must y">班长必交</span>
+    </a>
+    <a class="dl" href="files/附件8 肇庆医学院家庭经济困难学生认定工作实施办法.pdf" download data-page-node-id="tfOXaNtrDScQHWFhimFF9R">
+      <span class="ficon pdf" data-page-node-id="nrk91pCxzXaYUV9emf0aBI">PDF</span>
+      <span class="fi" data-page-node-id="YBOUAdCA8MslGeRmkVw4CD"><span class="n" data-page-node-id="2Ardbp9EoyGRSw8fZOFVzp">附件8 · 学校认定工作实施办法</span><span class="m" data-page-node-id="Cn1A00ChfAoykXV6xOs7S1">认定程序与等级政策原文</span></span>
+      <span class="must n" data-page-node-id="q9KIHkGrDenG0PVO94GdIq">参考</span>
+    </a>
+  </section>
+
+  <!-- 8 -->
+  <section id="s8" data-page-node-id="GaxEaQTg6BjdUYGwRVNjCq">
+    <div class="sec-head" data-page-node-id="O0IGgWna6TuBEfRfhisO5t"><span class="no" data-page-node-id="wsJGzafO6SWJ2BhyL2EnU1">捌</span><h2 data-page-node-id="aNlicYG99sRACAgfvwEnag">特别提醒</h2><span class="bar" data-page-node-id="88hjjoQS6CgEzkHavCxf1t"></span></div>
+    <div class="step" data-page-node-id="MwzvnX9xx2wEKKO1AR5XlZ">
+      <ol data-page-node-id="afpJaCkIQCEX971RUFEDpb">
+        <li data-page-node-id="u724ZRgEXPM6BAb3bmAopC"><b data-page-node-id="sHKmnaZZvZE0hFA3xHKE9f">顺序一致</b>：纸质材料排放顺序与附件7填写顺序一致；</li>
+        <li data-page-node-id="F2nB7skx6es6xuoJrng2IH"><b data-page-node-id="eOmhHDFWqmBxR91VhvLlPZ">宏必须启用</b>：附件7 检查不通过就交 = 等于没交；</li>
+        <li data-page-node-id="L6BTGg5vA81tNoMp0788gj"><b data-page-node-id="phGKOk4Y1AAVgkvF5vu17M">手写承诺</b>：承诺语本人手抄，不要打印，核对无误后再签；</li>
+        <li data-page-node-id="NqdVDGqbAgxpCugrPXGNZ7"><b data-page-node-id="a66JRKcOILCz6L3vFJ6fmr">放弃要走程序</b>：特殊群体自愿放弃须交附件1（签名＋按手印），学年更正为“2026—2027学年”；</li>
+        <li data-page-node-id="I5bBZc5n8dvUymkUhe8kC4"><b data-page-node-id="KnQFKp9Q4abW1mBqJkDGca">材料必须真实</b>：提供虚假佐证材料将影响认定结果和个人诚信记录；</li>
+        <li><b>评审会议记录表</b>：由班长组织填写并拍照留存，作为班级评审依据；未实际召开会议也必须补齐记录表＋照片两项材料。</li>
+        <li data-page-node-id="T1zXBGtDrXRlAQxO8cWXx3">认定含班级评议、学院审核公示等环节，材料按《认定分析表》逐一核查，请放心如实申报。</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer data-page-node-id="S9K1k6dRIBQz3FxtXwg6j9">
+    <div class="serif" data-page-node-id="0L1StEix0TDHfWCDdlYbEk">有疑问，看清楚指引再问班长</div>
+    <div style="margin-top:6px" data-page-node-id="Vf4gFyvrKyL7aCyDbuFHoF">
+      <span class="pill" data-page-node-id="gfHiHGj3IqOVJSDbbRZSW8">肇庆医学院</span><span class="pill" data-page-node-id="V3m28yyA3BN7F3jky6JKCl">学生资助管理</span><span class="pill" data-page-node-id="ZxTFdqlTM4ncR4ULiE0HET">2026—2027学年</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
